@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¿Quieres ser mi novia?</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+</head>
+<body>
+  <div id="corazones-container"></div>
+
+  <div class="container" data-aos="fade-up">
+    <h1>Hola mi prinsesa 💕</h1>
+    <p>Ingresa tu nombre para algo especial:</p>
+    <input type="text" id="nombre" placeholder="Tu nombre" />
+    <br />
+    <button onclick="empezar()">Continuar</button>
+  </div>
+
+  <div class="container" id="pregunta" style="display:none" data-aos="fade-up">
+    <h2 id="saludo"></h2>
+    <p>¿Quieres ser mi novia para siempre? 🥺</p>
+    <button onclick="respuesta('si')">Sí 💘</button>
+    <button onclick="respuesta('no')">No 😢</button>
+  </div>
+
+  <div id="carta" class="oculto" data-aos="fade-up">
+    <h2>Para ti, mi amor:</h2>
+    <p>Desde que llegaste, todo es más bonito. Gracias por ser tú. ❤️</p>
+  </div>
+
+  <!-- Botón para mostrar la carta secreta -->
+  <div id="boton-carta-secreta" class="oculto" data-aos="fade-up">
+    <button onclick="mostrarCartaSecreta()">Revelar Carta Secreta</button>
+  </div>
+
+  <!-- Carta secreta -->
+  <div id="carta-secreta" class="oculto" data-aos="fade-up">
+    <h2>Carta Secreta 📝</h2>
+    <p>El amor que siento por ti es más grande de lo que las palabras pueden expresar. ❤️</p>
+  </div>
+
+  <script src="script.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
